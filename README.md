@@ -4,7 +4,7 @@ A simple template for your software project documentation that your want to push
 
 ## Usage
 
-There are two ways to use this template: check that it works locally with a local Jekyll installation and push it to Github directly :)
+There are two ways to use this template: check that it works locally with a local Jekyll installation or push it to Github directly :)
 
 ### Local 
 
@@ -16,16 +16,14 @@ There are two ways to use this template: check that it works locally with a loca
     * `rbenv install -v 2.6.3`
     * `rbenv local 2.6.3`
     * `ruby -v` should now be 2.6.3 for this directory  
-2. Install Jekyll and bundler gems:  
-`gem install jekyll bundler`
-3. Go into the docs directory  
-`cd docs`
+2. Go into the docs directory  
+  `cd docs`
 3. Build the site and make it available on a local server:  
-`bundle exec jekyll serve`
+  `bundle exec jekyll serve`
 4. Now browse to http://localhost:4000
 
 ### Github
 
 Github uses Jekyll to render static site content for Github-Pages. Content in a top-level _docs folder_ or in a _branch gh-pages_ is automatically rendered.
- 
+
 Github does not support all Jekyll plugins however and only supports those it has whitelisted. If you want asciidoc rendering, you need to put it some effort because that plugin is not whitelisted (21. 8. 2019). Because Github does not support it, you need to **set up your own Jekyll** in your build pipeline and render the content yourself.
