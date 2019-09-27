@@ -1,6 +1,6 @@
-# Readme
+# Jekyll with Custom Bulma (Sandbox)
 
-A simple template for your software project documentation that your want to push to Github-Pages based documentation.
+A sandbox to play around in and customize Jekyll with Bulma CSS. Might be used for your software project documentation that your want to push to Github-Pages based documentation.
 
 ## Usage
 
@@ -65,3 +65,7 @@ The most popular syntax is the "SCSS" syntax which uses the file extension `.scs
 The second syntax, with the file extension `.sass`, was was Sass’s original syntax and still goes by the name "Sass". 
 
 > It [supports all the same features](https://sass-lang.com/documentation/syntax) as "SCSS", but it uses indentation instead of curly braces and semicolons to describe the format of the document.
+
+### Relative_Urls
+
+You might have noticed all these `{{url | relative_url}}`. They are required in my case because I have a custom domain. Might not be needed in your case.
