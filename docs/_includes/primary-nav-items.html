@@ -1,3 +1,3 @@
 {% for p in site.data.primary_nav %}
-    <a class="navbar-item" href="{{ p.link }}">{{ p.title }}</a>
+    <a class="navbar-item" href="{{ p.link | relative_url }}">{{ p.title }}</a>
 {% endfor %}
