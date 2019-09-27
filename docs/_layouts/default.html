@@ -1,10 +1,20 @@
 {% include top.html %}
 
-<body class="wrap">
-{% include header.html %}
+<body>
 
-{{ content }}
 
-{% include footer.html %}
+<section class="section">
+    <div class="container">
+        {% include header.html %}
+
+        <section class="section">
+            {{ content }}
+        </section>
+
+        {% include footer.html %}
+    </div>
+</section>
+
+
 </body>
 </html>

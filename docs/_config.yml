@@ -1,5 +1,5 @@
-title: Example project
-description: Project description in here.
+title: Custom Bulma Site
+description: Can be anything but we never read this variable with {{site.descritption}} so who cares :).
 collections:
   docs:
     permalink: "/:collection/:path/"
