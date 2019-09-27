@@ -29,11 +29,16 @@ Github uses Jekyll to render static site content for Github-Pages. Content in a 
 
 Github does not support all Jekyll plugins however and only supports those it has whitelisted. If you want asciidoc rendering, you need to put it some effort because that plugin is not whitelisted (21. 8. 2019). Because Github does not support it, you need to **set up your own Jekyll** in your build pipeline and render the content yourself.
 
+
 ## About Jekyll
 
 [Jekyll](https://jekyllrb.com) is a static site renderer written in Ruby and most notably it is directly supported by Github. 
 
-## Directory Structure
+### Favicon
+
+The Favicon was generated with a [Favicon Generator/](https://favicon.io/favicon-generator/).
+
+### Directory Structure
 
 Jekyll has a convention-based [directory structure](https://jekyllrb.com/docs/structure/) which can be configured by changing their default values in the `_config.yml`. If you see an `_` it's a safe bet that it's a file or folder which will be handled in a special way by Jekyll. **Every other directory will be copied verbatim to the generated site.**   
 
