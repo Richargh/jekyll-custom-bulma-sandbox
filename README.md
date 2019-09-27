@@ -33,6 +33,20 @@ Github does not support all Jekyll plugins however and only supports those it ha
 
 [Jekyll](https://jekyllrb.com) is a static site renderer written in Ruby and most notably it is directly supported by Github. 
 
+## Directory Structure
+
+Jekyll has a convention-based [directory structure](https://jekyllrb.com/docs/structure/) which can be configured by changing their default values in the `_config.yml`. If you see an `_` it's a safe bet that it's a file or folder which will be handled in a special way by Jekyll. **Every other directory will be copied verbatim to the generated site.**   
+
+* `_config.yml` stores the [Jekyll configuration](https://jekyllrb.com/docs/configuration/).
+* `_includes` stores page partials like `header.html` that can be included by the `_layouts`.
+* `_layouts` are the templates that wrap posts. So if you write a new `.md` file and want to change how it's presented by Jekyll this is the place to look at.
+* `_posts` contains the dynamic content that you want to render as static html pages. The naming convention of these files is important, and must follow the format: `YEAR-MONTH-DAY-title.MARKUPLANGUAGE`.
+* `_data` like `.yml`, `.yaml`, `.json`, `.csv` or `.tsv` can be placed here and referenced using `site.data.members`.
+* `_sass` is for sass partials that can be imported into your `main.scss` which will then be processed into a single stylesheet `main.css` that defines the styles to be used by your site. 
+* `_site` is where your statically generated site will be placed.
+
+Files that contain a [Front Matter Section](https://jekyllrb.com/docs/front-matter/) will be copied verbatim but also be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. One example for this is the `assets/css/main.scss file` which is transformed from `.scss` to `.css`.
+
 ### SASS
 
 Jekyll supports the [Sass (syntactically awesome style sheets)](https://sass-lang.com/) preprocessor. 
